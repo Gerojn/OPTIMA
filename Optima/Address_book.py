@@ -9,6 +9,7 @@ from collections import UserDict
 class DuplicatedPhoneError(Exception):
     ...
 
+
 class Field:
     def __init__(self, value: str):
         self.__value = value
@@ -178,7 +179,7 @@ class AddressBook(UserDict):
     def __init__(self, file_name):
         self.__file_name = file_name
         super().__init__()
-        
+
     def add_record(self, record: Record):
         self.data[record.name.value] = record
 

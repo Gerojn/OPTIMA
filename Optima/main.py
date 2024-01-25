@@ -5,7 +5,9 @@ from Optima.Address_book import AddressBook, Record, DuplicatedPhoneError
 from Optima.Notes import Note, NotesList
 from Optima.Folder_sorter import sort_folders_and_return_result
 from Optima.find_command import get_command
+from Optima.user_interface import ConsoleInterface
 
+ui = ConsoleInterface()
 root_path: Path = None
 records: AddressBook = None
 notes_list = None
